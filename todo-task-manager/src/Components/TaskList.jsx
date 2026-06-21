@@ -12,7 +12,7 @@ export default function TaskList({ tasks, onToggleTask, onEditTask, onDeleteTask
           Create a task or adjust your filters.
         </h2>
         <p className="mt-3 text-sm text-slate-500">
-          Tasks will appear here after they are added to LocalStorage.
+          
         </p>
       </section>
     );

@@ -74,7 +74,7 @@ export default function TaskForm({ editingTask, onCreateTask, onUpdateTask, onCa
           {isEditing ? "Edit selected task" : "Add a new task"}
         </h2>
         <p className="mt-2 text-sm text-slate-500">
-          All task changes are persisted in browser LocalStorage.
+          
         </p>
       </div>
 

@@ -144,14 +144,12 @@ export default function Home() {
         <header className="mb-8 overflow-hidden rounded-[2rem] bg-slate-950 p-8 text-white shadow-2xl shadow-slate-300">
           <div className="max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.25em] text-indigo-300">
-              ReactJS + Tailwind CSS + LocalStorage
             </p>
             <h1 className="mt-4 text-4xl font-black tracking-tight sm:text-5xl">
               Task Management TODO App
             </h1>
             <p className="mt-4 max-w-2xl text-base leading-7 text-slate-300">
-              Create, list, edit, complete, filter, search, and delete tasks with persistent browser
-              storage and a structured frontend folder architecture.
+              Create, search, and delete tasks.
             </p>
           </div>
         </header>

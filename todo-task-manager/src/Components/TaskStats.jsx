@@ -12,7 +12,7 @@ export default function TaskStats({ counts }) {
       helper: "Remaining work"
     },
     {
-      label: "Completed",
+      label: "Done",
       value: counts.completed,
       helper: "Finished items"
     },

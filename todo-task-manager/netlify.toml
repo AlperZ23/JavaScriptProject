@@ -1,7 +1,6 @@
 # netlify.toml
 
 [build]
-  [build]
   command = "cd todo-task-manager && npm ci && npm run build"
   publish = "todo-task-manager/dist"
 

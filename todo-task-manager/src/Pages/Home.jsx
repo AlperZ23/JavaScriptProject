@@ -157,6 +157,7 @@ export default function Home() {
         <div className="grid gap-6 lg:grid-cols-[420px_1fr]">
           <aside className="space-y-6">
             <TaskForm
+              key={editingTask?.id || "new-task"}
               editingTask={editingTask}
               onCreateTask={handleCreateTask}
               onUpdateTask={handleUpdateTask}

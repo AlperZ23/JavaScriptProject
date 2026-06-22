@@ -1,28 +1,25 @@
 // src/Components/TaskForm.jsx
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { DEFAULT_TASK_FORM, TASK_PRIORITIES } from "../Interfaces/task.js";
 
+function getInitialFormData(editingTask) {
+  if (!editingTask) {
+    return DEFAULT_TASK_FORM;
+  }
+
+  return {
+    title: editingTask.title,
+    description: editingTask.description,
+    category: editingTask.category,
+    priority: editingTask.priority
+  };
+}
+
 export default function TaskForm({ editingTask, onCreateTask, onUpdateTask, onCancelEdit }) {
-  const [formData, setFormData] = useState(DEFAULT_TASK_FORM);
+  const [formData, setFormData] = useState(() => getInitialFormData(editingTask));
   const [error, setError] = useState("");
 
   const isEditing = Boolean(editingTask);
-
-  useEffect(() => {
-    if (editingTask) {
-      setFormData({
-        title: editingTask.title,
-        description: editingTask.description,
-        category: editingTask.category,
-        priority: editingTask.priority
-      });
-      setError("");
-      return;
-    }
-
-    setFormData(DEFAULT_TASK_FORM);
-    setError("");
-  }, [editingTask]);
 
   function handleChange(event) {
     const { name, value } = event.target;

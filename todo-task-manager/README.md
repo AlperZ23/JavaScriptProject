@@ -1,16 +1,72 @@
-# React + Vite
+# Task Management TODO App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React and Tailwind CSS task manager built for the Web Gelistirme JavaScript project assignment. The app lets users create, list, update, delete, filter, search, and persist tasks in the browser with LocalStorage.
 
-Currently, two official plugins are available:
+## Live Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Netlify: https://spontaneous-gecko-e8e865.netlify.app/
+- GitHub: https://github.com/AlperZ23/JavaScriptProject
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Add new tasks with title, description, category, and priority.
+- List saved tasks with status, priority, category, created date, and updated date.
+- Update existing task details through the edit form.
+- Delete tasks from the task list.
+- Mark tasks as active or completed.
+- Filter tasks by all, active, and completed states.
+- Search tasks by title, description, category, or priority.
+- Save tasks to LocalStorage so data remains after page refresh.
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Vite
+- Tailwind CSS
+- JavaScript
+- LocalStorage
+- Netlify
+
+## Project Structure
+
+```text
+src/
+  Components/
+    TaskFilters.jsx
+    TaskForm.jsx
+    TaskItem.jsx
+    TaskList.jsx
+    TaskStats.jsx
+  Interfaces/
+    task.js
+  Pages/
+    Home.jsx
+```
+
+## Screenshot
+
+The project screenshot is included in the submission as `Task Manager _ React TODO App.pdf`.
+
+## Installation
+
+```bash
+npm install
+```
+
+## Development
+
+```bash
+npm run dev
+```
+
+## Build
+
+```bash
+npm run build
+```
+
+## Lint
+
+```bash
+npm run lint
+```
